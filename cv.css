@@ -154,15 +154,15 @@ ul{
     }
 }
 .bg-img li:nth-child(1){
-    background: url(../CV/image/bg1.jpg) no-repeat center ;
+    background: url(./image/bg1.jpg) no-repeat center ;
     background-size: cover;
 }
 .bg-img li:nth-child(2){
-    background: url(../CV/image/bg2.jpg) no-repeat center ;
+    background: url(./image/bg2.jpg) no-repeat center ;
     background-size: cover;
 }
 .bg-img li:nth-child(3){
-    background: url(../CV/image/bg3.jpg) no-repeat center ;
+    background: url(./image/bg3.jpg) no-repeat center ;
     background-size: cover;
 }
 
@@ -181,7 +181,7 @@ ul{
 }
 #circle-me
 {
-    background:url(../CV/image/me.jpg) center;
+    background:url(./image/me.jpg) center;
     background-size: cover;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -219,7 +219,7 @@ ul{
 
 #section4
 {
-    background: url(../CV/image/services-bg.jpg) no-repeat center;
+    background: url(./image/services-bg.jpg) no-repeat center;
     background-attachment:fixed;
     
 }
@@ -368,7 +368,7 @@ ul{
 #section5
 {
 
-    background: url(../CV/image/achivements-bg.jpg) no-repeat center;
+    background: url(./image/achivements-bg.jpg) no-repeat center;
     background-attachment:fixed;
 }
 

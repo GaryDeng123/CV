@@ -13,8 +13,19 @@ ul{
 	color: #787978;
 	line-height: 1.42857143;
 	font-size: 14px;
-
 }
+@media screen and (max-width: 1000px) {
+    .container{
+        width:1000px;
+    }
+}
+/** iPhone **/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .container{
+        width:100%;
+    }
+}
+
 /*wrapper设置了垂直居中*/
 .wrapper
 {
@@ -83,7 +94,6 @@ ul{
 {
 	    color: #2c3e50;
     letter-spacing: 3px;
-    /*color: #96a3b2;*/
     font-size: 30px;
     margin: 40px 0;
 }
@@ -96,7 +106,26 @@ ul{
 	font-size: 18px;
 	margin-top: 5vh;
 }
+/** iPhone **/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    #section1 h1{
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.section h3
+{
+    font-size: 18px;
+}
 
+#btn-aboutme
+{
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+}
 .bg-img{
     width: 100%;
     height: 100%;
@@ -206,14 +235,38 @@ ul{
     text-align: center;
     width: 61%;
     margin:10px auto;
-
-    
 }
 .wrapper>p+p
 {
     margin-top: 20px;
 }
-
+/** iPhone **/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    #section2 h3{
+    margin-top:100px;
+    }
+    .circle{
+        height:100px;
+        width: 100px;
+    }
+    #circle-me{
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    #section2 p{
+    text-indent: 0;
+    text-align: left;
+    width: 90%;
+    margin:5px auto;
+    }
+    .navbar-header>.navbar-brand{
+        font-size:15px;
+        padding:20px 5px;
+    }
+    .navbar-nav>li{
+        padding: 20px 5px
+    }
+}
 
 /*section4*/
 
@@ -301,7 +354,81 @@ ul{
     font-size:20px;
 }
 
+/** iPhone **/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .wrap-circle{
+        margin-top:20px;
+        margin-left: 30px;
+    }
+    .part-circle
+{
+    height: 80px;
+    width: 80px;
+    top: 15px;
+    position:absolute;
+    border-radius: 55px;
+    border:5px solid #2c3e50;
+}
+.part-circle-left{
 
+    border-top-color: transparent;
+}
+
+.part-circle-left-85{
+    border-top-color: transparent;
+    transform: rotate(-10deg);
+}
+.part-circle-left-75{
+    border-top-color: transparent;
+    transform: rotate(-30deg);
+}
+
+.part-circle-right
+{
+    border-top-color: transparent;
+    transform: rotate(-36deg);
+}
+
+
+.wrap-circle
+{
+    height: 80px;
+    margin: 10px auto;
+    display: table;
+    margin-top: 20px;
+}
+
+.wrap-single-circle
+{
+    float: left;
+
+}
+.wrap-single-circle:not(:last-child)
+{
+     margin-right:30px; 
+}
+.circle-tech
+{
+    height: 80px;
+    width: 80px;
+    /*border:5px solid #2c3e50;*/
+    /*border-radius: 55px;*/
+    display: inline-block;
+    position: relative;
+}
+.circle-tech>span
+{
+
+    color: #2c3e50;
+    font-size: 25px;
+    line-height: 100px;
+}
+.wrap-single-circle > p
+{
+    color:#E87E04 ;
+    font-size:20px;
+}
+}
 
 /*教育经历section3*/
 
@@ -391,3 +518,11 @@ ul{
     font-size: 18px;
     color: #2c3e50;
 }
+/** iPhone **/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .text-left{
+        right: 80%
+    }
+    .text-right{
+        left: 30%
+    }

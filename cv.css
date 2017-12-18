@@ -589,6 +589,9 @@ ul{
 }
 /** iPhone **/
 @media only screen and (min-width: 320px) and (max-width: 500px) {
+    #section5{
+    background: url(./image/services-bg.jpg) no-repeat center;
+    }
     .text-left{
     flex: 0 0 50px;
     margin-left: 50px;

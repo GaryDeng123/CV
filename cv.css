@@ -2,6 +2,7 @@ body
 {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 ul{
     list-style: none;
@@ -9,12 +10,16 @@ ul{
 .container
 {
 	width: 100%;
+    /*min-width: 1000px;*/
 	text-align: center;
 	color: #787978;
 	line-height: 1.42857143;
 	font-size: 14px;
 }
 @media screen and (max-width: 1000px) {
+    body{
+        overflow-x: scroll;
+    }
     .container{
         width:1000px;
     }

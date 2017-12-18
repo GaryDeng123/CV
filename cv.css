@@ -392,20 +392,26 @@ ul{
 
 .wrap-circle
 {
-    height: 80px;
-    margin: 10px auto;
+    height: 300px;
+    width:320px;
+    margin: 0;
     display: table;
     margin-top: 20px;
+    position: relative;
+    right:-50%;
+    transform: translateX(-50%);
 }
 
-.wrap-single-circle
-{
+.wrap-single-circle{
     float: left;
-
 }
 .wrap-single-circle:not(:last-child)
 {
      margin-right:30px; 
+}
+.wrap-single-circle:nth-child(3)
+{
+     margin-right:0px; 
 }
 .circle-tech
 {
@@ -478,6 +484,9 @@ ul{
     bottom:-20px;
     left: 60%;
 }
+.port-undertime,.port-mastertime{
+    display: none;
+}
 #undergraduateDetail
 {
     position: absolute;
@@ -487,7 +496,58 @@ ul{
     /*display: none;*/
 }
 
+/** iPhone **/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    #section3 h3{
+        margin-top:30px
+    }
+/*    #section3 .wrapper{
+        position:relative;
+    }*/
+    .my-xp{
+        margin-top: 30px;
 
+    }
+    #masterCircle,#undergraduateCircle{
+        display: none;
+        line-height: 0px;
+        border-radius: 50px;
+    }
+    #master,#undergraduate{
+        display: none;
+    }
+    #masterDetail,#undergraduateDetail{
+        position:relative;
+        text-align: left;
+        width: 100%;
+        line-height: 15px;
+        font-size:12px;
+        top: 0px;
+        right:0;
+        opacity:1;
+    }
+    #undergraduateDetail{
+        left:50%;
+    }
+    .port-undertime{
+        display: block;
+        position: absolute;
+        bottom:50px;
+    }
+    .port-mastertime{
+        display: block;
+        position: absolute;
+        top:130px;
+        left:200px;
+    }
+    #masterDetail>p,#undergraduateDetail>p{
+        margin:3px 0;
+    }
+    .my-xp>li+li{
+    margin-top: 50px;
+    transition: opacity 0.4s linear;
+    }
+}
 
 
 
@@ -526,3 +586,4 @@ ul{
     .text-right{
         left: 30%
     }
+}
